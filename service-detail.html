@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Описание услуги — СантехМастер KG</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background: #f4f7f6; color: #2d3748; padding-bottom: 50px; }
+        .container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
+        .header { background: #1a365d; color: white; padding: 15px 0; margin-bottom: 40px; }
+        .header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 22px; font-weight: bold; color: #3182ce; }
+        .nav a { color: #e2e8f0; text-decoration: none; margin-left: 20px; font-weight: 500; }
+        .service-box { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: none; }
+        .service-box:target { display: block; } /* Магия CSS: показывает только выбранный блок */
+        h1 { color: #1a365d; margin-bottom: 20px; }
+        ul { margin: 20px 0; padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        .back-btn { display: inline-block; color: #3182ce; text-decoration: none; margin-bottom: 20px; font-weight: bold; }
+        .whatsapp-btn { display: inline-block; background: #25D366; color: white; text-decoration: none; padding: 12px 25px; border-radius: 30px; font-weight: bold; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">🔧 СантехМастер.KG</div>
+            <nav class="nav">
+                <a href="index.html">Главная</a>
+                <a href="services.html">Услуги</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="services.html" class="back-btn">← Назад к услугам</a>
+
+        <!-- Описание Услуги 1 -->
+        <div id="type1" class="service-box">
+            <h1>Канализационные работы</h1>
+            <p>Мы предлагаем профессиональное выполнение внутренних и наружных канализационных работ:</p>
+            <ul>
+                <li>Монтаж и демонтаж систем любой сложности.</li>
+                <li>Качественная замена старых труб на новые.</li>
+                <li>Установка сантехники: унитазов, раковин, ванн, душевых кабин, смесителей и бойлеров.</li>
+                <li><strong>Наружные работы:</strong> копка траншей, укладка труб и прокладка полноценных трубопроводов.</li>
+            </ul>
+            <a href="https://wa.me" class="whatsapp-btn" target="_blank">Заказать эту услугу в WhatsApp</a>
+        </div>
+
+        <!-- Описание Услуги 2 -->
+        <div id="type2" class="service-box">
+            <h1>Прочистка засоров</h1>
+            <p>Быстро и эффективно устраняем аварийные ситуации и плановые засоры в трубах:</p>
+            <ul>
+                <li><strong>Гидродинамическая прочистка:</strong> промывка труб водой под высоким давлением, удаляющая любые жировые и старые отложения.</li>
+                <li><strong>Механическая прочистка:</strong> удаление твердых засоров специальным профессиональным тросом.</li>
+            </ul>
+            <a href="https://wa.me" class="whatsapp-btn" target="_blank">Вызвать мастера на засор</a>
+        </div>
+
+        <!-- Описание Услуги 3 -->
+        <div id="type3" class="service-box">
+            <h1>Теплые полы и Отопление</h1>
+            <p>Создаем уют и тепло в вашем доме с гарантией качества:</p>
+            <ul>
+                <li>Проектирование и правильный монтаж водяных или электрических теплых полов.</li>
+                <li>Установка современных, надежных систем отопления (котлы, радиаторы).</li>
+                <li>Качественная сборка и изоляция отопительных трасс.</li>
+            </ul>
+            <a href="https://wa.me" class="whatsapp-btn" target="_blank">Проконсультироваться по отоплению</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
