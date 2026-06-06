@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши Услуги — СантехМастер KG</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background: #f4f7f6; color: #2d3748; padding-bottom: 50px; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+        .header { background: #1a365d; color: white; padding: 15px 0; margin-bottom: 40px; }
+        .header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 22px; font-weight: bold; color: #3182ce; }
+        .nav a { color: #e2e8f0; text-decoration: none; margin-left: 20px; font-weight: 500; }
+        .nav a:hover, .nav a.active { color: #3182ce; }
+        h1 { text-align: center; color: #1a365d; margin-bottom: 30px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .card { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-decoration: none; color: inherit; display: block; border-top: 4px solid #3182ce; transition: transform 0.2s; }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { color: #2b6cb0; margin-bottom: 10px; }
+        .more-link { display: inline-block; margin-top: 15px; color: #3182ce; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">🔧 СантехМастер.KG</div>
+            <nav class="nav">
+                <a href="index.html">Главная</a>
+                <a href="services.html" class="active">Услуги</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Выберите категорию услуг</h1>
+        <div class="grid">
+            
+            <!-- Ссылка на 1-ю услугу -->
+            <a href="service-detail.html#type1" class="card">
+                <h3>1. Канализационные работы</h3>
+                <p>Монтаж, демонтаж, замена труб, установка сантехники и наружные работы.</p>
+                <span class="more-link">Подробнее →</span>
+            </a>
+
+            <!-- Ссылка на 2-ю услугу -->
+            <a href="service-detail.html#type2" class="card">
+                <h3>2. Прочистка засоров</h3>
+                <p>Гидродинамическая и механическая прочистка труб любой сложности.</p>
+                <span class="more-link">Подробнее →</span>
+            </a>
+
+            <!-- Ссылка на 3-ю услугу -->
+            <a href="service-detail.html#type3" class="card">
+                <h3>3. Теплые полы и Отопление</h3>
+                <p>Профессиональный монтаж теплых полов, систем отопления и укладка трасс.</p>
+                <span class="more-link">Подробнее →</span>
+            </a>
+
+        </div>
+    </div>
+
+</body>
+</html>
