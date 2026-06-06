@@ -3,146 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>СантехМастер KG — Качественные сантехнические услуги</title>
+    <title>СантехМастер KG — Главная</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; scroll-behavior: smooth; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
         body { background: #f4f7f6; color: #2d3748; line-height: 1.6; }
         .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
-        
-        /* Шапка и Меню */
-        .header { background: #1a365d; color: white; padding: 15px 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        .header .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+        .header { background: #1a365d; color: white; padding: 15px 0; }
+        .header .container { display: flex; justify-content: space-between; align-items: center; }
         .logo { font-size: 22px; font-weight: bold; color: #3182ce; }
-        .nav a { color: #e2e8f0; text-decoration: none; margin-left: 20px; font-weight: 500; transition: color 0.3s; }
-        .nav a:hover { color: #3182ce; }
-
-        /* Главный блок */
-        .hero { background: linear-gradient(135deg, #1a365d 0%, #2a4365 100%); color: white; padding: 60px 0; text-align: center; }
-        .hero h1 { font-size: 32px; margin-bottom: 10px; }
-        .whatsapp-btn { display: inline-block; background: #25D366; color: white; text-decoration: none; padding: 12px 25px; border-radius: 30px; font-weight: bold; margin-top: 15px; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); transition: transform 0.2s; }
-        .whatsapp-btn:hover { transform: scale(1.05); }
-
-        /* Секции */
-        section { padding: 50px 0; border-bottom: 1px solid #e2e8f0; }
-        h2 { color: #1a365d; text-align: center; margin-bottom: 35px; font-size: 26px; }
-        
-        /* Услуги */
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
-        .card { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        .card h3 { color: #2b6cb0; margin-bottom: 15px; font-size: 18px; border-left: 4px solid #3182ce; padding-left: 10px; }
-        .card ul { list-style: none; }
-        .card ul li { margin-bottom: 8px; position: relative; padding-left: 15px; }
-        .card ul li::before { content: "•"; color: #3182ce; font-weight: bold; position: absolute; left: 0; }
-        
-        /* Вакансии и Работы */
-        .info-box { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 20px; }
-        .info-box h3 { color: #1a365d; margin-bottom: 15px; }
-        
-        /* Футер */
-        .footer { background: #1a365d; color: #a0aec0; padding: 20px 0; text-align: center; font-size: 14px; }
-        
-        @media (max-width: 768px) { .header .container { flex-direction: column; gap: 15px; } .nav a { margin: 0 10px; } }
+        .nav a { color: #e2e8f0; text-decoration: none; margin-left: 20px; font-weight: 500; }
+        .nav a:hover, .nav a.active { color: #3182ce; }
+        .hero { background: linear-gradient(135deg, #1a365d 0%, #2a4365 100%); color: white; padding: 80px 0; text-align: center; }
+        .hero h1 { font-size: 32px; margin-bottom: 15px; }
+        .btn-menu { display: inline-block; background: #3182ce; color: white; text-decoration: none; padding: 15px 30px; border-radius: 8px; font-weight: bold; margin-top: 20px; }
+        .info-section { padding: 50px 0; text-align: center; }
     </style>
 </head>
 <body>
 
-    <!-- Шапка с Вашим меню -->
     <header class="header">
         <div class="container">
             <div class="logo">🔧 СантехМастер.KG</div>
             <nav class="nav">
-                <a href="#services">Услуги</a>
-                <a href="#jobs">Вакансии</a>
-                <a href="#portfolio">Работы</a>
-                <a href="#about">О нас</a>
+                <a href="index.html" class="active">Главная</a>
+                <a href="services.html">Услуги</a>
             </nav>
         </div>
     </header>
 
-    <!-- Главный баннер и кнопка перехода в Ватсап -->
     <section class="hero">
         <div class="container">
-            <h1>Профессиональные сантехнические услуги</h1>
-            <p>Нажмите ниже, чтобы связаться с мастером напрямую</p>
-            <a href="https://wa.me." class="whatsapp-btn" target="_blank">💬 Переход по Ватсап (0772 55 88 32)</a>
+            <h1>Добро пожаловать в СантехМастер.KG</h1>
+            <p>Профессиональный ремонт, монтаж и прочистка в вашем городе</p>
+            <a href="services.html" class="btn-menu">Перейти к списку услуг 📋</a>
         </div>
     </section>
 
-    <!-- Раздел 1. Услуги -->
-    <section id="services">
+    <section class="info-section">
         <div class="container">
-            <h2>Наши услуги</h2>
-            <div class="grid">
-                <!-- Карта 1 -->
-                <div class="card">
-                    <h3>1. Канализационные работы</h3>
-                    <ul>
-                        <li>Монтаж и демонтаж</li>
-                        <li>Замена труб</li>
-                        <li>Замена унитазов, раковин, ванн, душевых кабин, смесителей, бойлеров</li>
-                        <li><strong>Наружные работы:</strong> прокладка трубопроводов и канализации (копка траншей, укладка труб)</li>
-                    </ul>
-                </div>
-                <!-- Карта 2 -->
-                <div class="card">
-                    <h3>2. Прочистка засоров</h3>
-                    <ul>
-                        <li>Гидродинамическая прочистка</li>
-                        <li>Механическая прочистка (тросом)</li>
-                    </ul>
-                </div>
-                <!-- Карта 3 -->
-                <div class="card">
-                    <h3>3. Теплые полы и Отопление</h3>
-                    <ul>
-                        <li>Монтаж теплых полов</li>
-                        <li>Установка систем отопления</li>
-                        <li>Монтаж трасс</li>
-                    </ul>
-                </div>
-            </div>
+            <h2>О нашем сервисе</h2>
+            <p style="max-width: 600px; margin: 20px auto; color: #4a5568;">Выполняем полный комплекс сантехнических работ любой сложности. Работаем на совесть, гарантируем чистоту и соблюдение сроков.</p>
         </div>
     </section>
-
-    <!-- Раздел 2. Вакансии -->
-    <section id="jobs" style="background: #edf2f7;">
-        <div class="container">
-            <h2>Вакансии</h2>
-            <div class="info-box">
-                <h3>Ищем специалистов в команду</h3>
-                <p><strong>Требуются:</strong> сварщики, сантехники, слесари.</p>
-                <p style="margin-top: 10px; color: #4a5568;">Если вы мастер своего дела, аккуратны и ответственны — свяжитесь с нами по кнопке вверху для собеседования.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Раздел 3. О проделанной работе -->
-    <section id="portfolio">
-        <div class="container">
-            <h2>О проделанной работе</h2>
-            <div class="info-box">
-                <h3>Фото и Видео отчеты</h3>
-                <p>Мы фиксируем каждый этап работы! По запросу предоставляем фото и видео отчеты скрытых коммуникаций, разводки труб и процесса монтажа.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Раздел 4. О нас -->
-    <section id="about" style="background: #edf2f7;">
-        <div class="container">
-            <h2>О нас</h2>
-            <div class="info-box">
-                <h3>Надежный сервис «СантехМастер»</h3>
-                <p>Выполняем полный комплекс сантехнических работ любой сложности в жилых и коммерческих помещениях. Работаем на совесть, гарантируем чистоту, соблюдение сроков и высокое качество укладки и монтажа материалов.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 СантехМастер.KG. Все права защищены.</p>
-        </div>
-    </footer>
 
 </body>
 </html>
